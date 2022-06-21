@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommorceApi", "EcommorceApi\EcommorceApi.csproj", "{562A49DD-3005-47C5-A8DE-DFA51BEDC33A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{562A49DD-3005-47C5-A8DE-DFA51BEDC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562A49DD-3005-47C5-A8DE-DFA51BEDC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562A49DD-3005-47C5-A8DE-DFA51BEDC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562A49DD-3005-47C5-A8DE-DFA51BEDC33A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20F812D3-1F99-4B9D-A756-D0A1361C6F6B}
+	EndGlobalSection
+EndGlobal

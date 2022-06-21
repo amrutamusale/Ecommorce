@@ -1,0 +1,57 @@
+<table>
+    <tr>
+        <td>Product Name</td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductId" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Code</td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductName" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Amount</td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductCategory" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Price</td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductPrice" type="text">
+        </td>
+    </tr>
+    <input type="submit" (click)="AddProduct()">
+    <input type="button" (click)="getData()" value="getData"/>
+</table>
+<!-- {{ProductModel.ProductAmount}}
+{{ProductModel.ProductName}}
+{{ProductModel.ProductCode}} -->
+
+<table border="2">
+    <tr>
+        <td>Product Id</td>
+        <td>Product Name</td>
+        <td>Product Category</td>
+        <td>Product Price</td>
+        <td>Actions</td>
+    </tr>
+    <tr *ngFor="let item of CustmerModels">
+        <td>
+            {{item.ProductId}}
+        </td>
+        <td> {{item.ProductName}}
+        </td>
+        <td> {{item.ProductCategory}}
+        </td>
+        <td> {{item.ProductPrice}}
+        </td>
+        
+        <td>
+            <input type="button" value="Edit" (click)="EditProduct(item)" />
+            <input type="button" value="Delete" (click)="DeleteProduct(item)" />
+        </td>
+    </tr>
+</table>

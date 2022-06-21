@@ -1,0 +1,38 @@
+<table>
+    <tr>
+        <td>Admin Id</td>
+        <td>
+            <input [(ngModel)]="AdminModel.AdminId" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Admin Name</td>
+        <td>
+            <input [(ngModel)]="AdminModel.AdminName" type="text">
+        </td>
+    </tr>
+    <input type="submit" (click)="AddAdmin()">
+    <input type="button" (click)="getData()" value="getData"/>
+</table>
+<!-- {{AdminModel.AdminAmount}}
+{{AdminModel.AdminName}}
+{{AdminModel.AdminCode}} -->
+
+<table border="2">
+    <tr>
+        <td>Admin Id</td>
+        <td>Admin Name</td>
+        <td>Actions</td>
+    </tr>
+    <tr *ngFor="let item of CustmerModels">
+        <td>
+            {{item.AdminId}}
+        </td>
+        <td> {{item.AdminName}}
+        </td>
+        <td>
+            <input type="button" value="Edit" (click)="EditAdmin(item)" />
+            <input type="button" value="Delete" (click)="DeleteAdmin(item)" />
+        </td>
+    </tr>
+</table>
